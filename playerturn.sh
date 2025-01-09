@@ -1,5 +1,7 @@
+#! /bin/bash
+source main.sh
 
-plyer_turn () {
+player_turn () {
 	        if [[ $(($turn % 2)) == 0 ]]; then
 			play=$player2
 			echo -n "Player 2, choose a square: "

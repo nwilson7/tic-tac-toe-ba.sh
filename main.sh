@@ -1,7 +1,5 @@
 #! /bin/bash
 
-
-
 source welcome.sh
 source choose_mode.sh
 source checkwinner.sh
@@ -30,8 +28,6 @@ board () {
 	  echo "============="
  }
 
-welcome_message
-board
 while $game_on
 do
 	player_turn

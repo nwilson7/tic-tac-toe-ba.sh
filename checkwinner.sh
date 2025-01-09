@@ -1,5 +1,6 @@
 #! /bin/bash
 
+source main.sh
 source checkmatch.sh
 
 check_winner()

@@ -1,3 +1,5 @@
+#! /bin/bash
+
 source playerturn.sh
 
 choose_mode() {

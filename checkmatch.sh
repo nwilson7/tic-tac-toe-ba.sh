@@ -1,4 +1,5 @@
 #! /bin/bash
+source main.sh
 
 check_match() {
 	  if  [[ ${moves[$1]} == ${moves[$2]} ]]&& \
