@@ -38,7 +38,7 @@ check_winner()
 	check_match 2 4 6
 
 	if [ "$turn" -gt 9 ]; then
-		$game_on=false
+		game_on=false
 		echo "Game ends in a draw!"
 	fi
 }
