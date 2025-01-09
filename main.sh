@@ -30,8 +30,8 @@ board () {
 
 while $game_on
 do
-	player_turn
 	board
+	player_turn
 	check_winner
 done
 
