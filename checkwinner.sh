@@ -1,7 +1,6 @@
 #! /bin/bash
 
 source checkmatch.sh
-source playagain.sh
 
 check_winner()
 {

@@ -1,6 +1,5 @@
 #! /bin/bash
 
-source playagain.sh
 
 check_match() {
 	  if  [[ ${moves[$1]} == ${moves[$2]} ]]&& \
