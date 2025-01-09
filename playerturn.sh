@@ -9,7 +9,7 @@ player_turn () {
 			echo -n "Player 1, choose a square: "
 		fi
 														
-		read "" square
+		read -p "" square
 															
 		space=${moves[$square - 1]}
 																
