@@ -1,6 +1,7 @@
 #! /bin/bash
 
 source checkmatch.sh
+source playagain.sh
 
 check_winner()
 {
@@ -39,7 +40,9 @@ check_winner()
 
 	if [ "$turn" -gt 9 ]; then
 		game_on=false
+		echo
 		echo "Game ends in a draw!"
+		play_again
 	fi
 }
 
