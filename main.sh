@@ -7,7 +7,6 @@ source checkmatch.sh
 source playerturn.sh
 source board.sh
 source rules.sh
-source playagain.sh
 
 welcome_message
 
