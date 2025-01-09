@@ -15,14 +15,12 @@ check_match() {
 			  echo
 			  ((player1score++))
 			  echo -e "Current Score:\nPlayer 1's score = $player1score\nPlayer 2's score = $player2score" 
-			  play_again
 		  else
 			  board
 			  echo "Player two wins!" 
 			  echo
 			  ((player2score++))
 			  echo -e "Current Score:\nPlayer 1's score = $player1score\nPlayer 2's score = $player2score"
-			  play_again
 		  fi
 	  fi
 }
