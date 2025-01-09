@@ -1,5 +1,4 @@
 #! /bin/bash
-source main.sh
 
 player_turn () {
 	        if [[ $(($turn % 2)) == 0 ]]; then
@@ -12,13 +11,13 @@ player_turn () {
 														
 		read "" square
 															
-		space=${moves[$square - 1)]}
+		space=${moves[$square - 1]}
 																
 		if [[ ! $space =~ ^[0-9]+$ ]]; then
 			echo "Invalid square!"
 			player_turn
 		else
-			moves[$square -1)]=$play
+			moves[$square -1]=$play
 			 ((turn++))
 		fi
 		space=${moves[($square - 1)]}
