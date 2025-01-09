@@ -1,8 +1,10 @@
 #! /bin/bash
 
-source playerturn.sh
+
+
 source welcome.sh
 source choose_mode.sh
+source checkwinner.sh
 
 moves=(1 2 3 4 5 6 7 8 9)
 
@@ -10,6 +12,7 @@ player1="X"
 player2="O"
 
 turn=1
+game_on=true
 
 welcome_message
 
@@ -25,5 +28,12 @@ board () {
 	  echo "============="
  }
 
-player_turn
+welcome_message
+board
+while $game_on
+do
+	player_turn
+	board
+	check_winner
+done
 
