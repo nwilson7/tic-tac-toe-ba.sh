@@ -3,16 +3,26 @@
 source playerturn.sh
 
 choose_mode() {
-        read -p "Choose mode(multiplayer/quit):" mode
+	echo
+	echo "Menu"
+	echo "1. Multiplayer" 
+	echo "2. Quit"
+        read -p "Choose mode: " mode
 
 	case $mode in
-		multiplayer)
+		1)
+			echo
 			echo "You have chosen to play multiplayer mode"
+			echo "Loading..."
+			sleep 2
 			board
 			player_turn
 			;;
 		*)
-			break
+			echo
+			echo "Exiting..."
+			sleep 2
+			exit
 			;;
 	esac
 

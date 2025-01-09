@@ -6,18 +6,23 @@ source checkwinner.sh
 source checkmatch.sh
 source playerturn.sh
 source board.sh
+source rules.sh
+source playagain.sh
 
 moves=(1 2 3 4 5 6 7 8 9)
 
 player1="X"
 player2="O"
 
+player1score=0
+player2score=0
+
 turn=1
 game_on=true
 
 welcome_message
 
-choose_mode
+display_rules
 
 while $game_on
 do

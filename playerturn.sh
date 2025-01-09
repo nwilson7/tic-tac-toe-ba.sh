@@ -1,7 +1,7 @@
 #! /bin/bash
 
 player_turn () {
-	        if [[ $(($turn % 2)) == 0 ]]; then
+       		if [[ $(($turn % 2)) == 0 ]]; then
 			play=$player2
 			echo -n "Player 2, choose a square: "
 		else
