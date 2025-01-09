@@ -1,5 +1,7 @@
 #! /bin/bash
 
+source checkmatch.sh
+
 check_winner()
 {
 	if [ $game_on == false ]; then
