@@ -42,7 +42,6 @@ check_winner()
 		game_on=false
 		echo
 		echo "Game ends in a draw!"
-		play_again
 	fi
 }
 
