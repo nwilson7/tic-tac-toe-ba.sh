@@ -7,6 +7,16 @@ player2="O"
 
 turn=1
 
+welcome_message() {
+	echo "==================================="
+	echo "Welcome to tic-tac-toe bash edition"
+	echo "==================================="
+}
+
+choose_mode() {
+	echo "Choose mode(single player/multiplayer):" 
+}
+
 board () {
 	  clear
 	  echo " ${moves[0]} | ${moves[1]} | ${moves[2]} "
