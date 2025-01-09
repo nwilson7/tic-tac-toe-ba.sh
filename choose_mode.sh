@@ -11,6 +11,7 @@ choose_mode() {
 			;;
 		multiplayer)
 			echo "You have chosen to play multiplayer mode"
+			board
 			player_turn
 			;;
 		quit)

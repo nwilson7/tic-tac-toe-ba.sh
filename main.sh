@@ -5,6 +5,7 @@ source choose_mode.sh
 source checkwinner.sh
 source checkmatch.sh
 source playerturn.sh
+source board.sh
 
 moves=(1 2 3 4 5 6 7 8 9)
 
@@ -17,16 +18,6 @@ game_on=true
 welcome_message
 
 choose_mode
-
-board () {
-	  clear
-	  echo " ${moves[0]} | ${moves[1]} | ${moves[2]} "
-	  echo "-----------"
-      	  echo " ${moves[3]} | ${moves[4]} | ${moves[5]} "
-	  echo "-----------"
-	  echo " ${moves[6]} | ${moves[7]} | ${moves[8]} "
-	  echo "============="
- }
 
 while $game_on
 do
